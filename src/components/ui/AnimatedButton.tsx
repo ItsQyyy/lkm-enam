@@ -1,7 +1,6 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-// import { animatePageOut } from "../../lib/animatePage";
 
 interface AnimatedButtonProps {
   href?: string;

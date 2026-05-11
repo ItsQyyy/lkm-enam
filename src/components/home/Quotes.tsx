@@ -158,13 +158,13 @@ const Quotes = () => {
             ref={introLine1Ref}
             className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-snug"
           >
-            {renderLetterSpans("Kalkulus mengajarkan bahwa", "l1")}
+            {renderLetterSpans("Satu orang bisa bermimpi,", "l1")}
           </div>
           <div
             ref={introLine2Ref}
             className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-snug"
           >
-            {renderLetterSpans("setiap perubahan memiliki makna dan pola.", "l2")}
+            {renderLetterSpans("tapi satu tim bisa mewujudkannya.", "l2")}
           </div>
           <div
             ref={introLine3Ref}
@@ -180,10 +180,10 @@ const Quotes = () => {
           className="absolute inset-0 flex flex-col items-center justify-center font-[Raleway] z-40 px-8 md:px-24 gap-2"
         >
           <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-snug text-center">
-            Tidak semua hal bisa dipahami secara instan,
+            Bukan yang terkuat yang bertahan,
           </p>
           <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-snug text-center">
-            karena proses adalah bagian penting dari hasil.
+            melainkan yang paling mampu berjalan bersama.
           </p>
         </div>
 
@@ -193,10 +193,10 @@ const Quotes = () => {
           className="absolute inset-0 flex flex-col items-center justify-center font-[Raleway] z-40 px-8 md:px-24 gap-2"
         >
           <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-snug text-center">
-            Seperti dalam hidup, memahami langkah demi langkah
+            Karena di sinilah kita belajar 
           </p>
           <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-snug text-center">
-            akan membawa kita pada jawaban yang lebih jelas.
+            bahwa bersama, kita lebih dari cukup.
           </p>
         </div>
 

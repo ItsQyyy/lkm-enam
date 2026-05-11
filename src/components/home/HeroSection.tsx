@@ -3,37 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
-// ── Helper: split teks jadi span per karakter ─────────────────
-function SplitChars({
-  text,
-  className = "",
-}: {
-  text: string;
-  className?: string;
-}) {
-  const words = text.split(" ");
-  return (
-    <span className={className} aria-label={text}>
-      {words.map((word, wi) => (
-        <span key={wi} className="inline-block overflow-hidden">
-          {word.split("").map((char, ci) => (
-            <span key={ci} className="char inline-block" aria-hidden="true">
-              {char}
-            </span>
-          ))}
-          {wi < words.length - 1 && (
-            <span className="inline-block" aria-hidden="true">
-              &nbsp;
-            </span>
-          )}
-        </span>
-      ))}
-    </span>
-  );
-}
-
-gsap.registerPlugin(ScrollTrigger);
-
 export default function HeroSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const labelRef = useRef<HTMLSpanElement>(null);
@@ -144,5 +113,34 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
+  );
+}
+
+// ── Helper: split teks jadi span per karakter ─────────────────
+function SplitChars({
+  text,
+  className = "",
+}: {
+  text: string;
+  className?: string;
+}) {
+  const words = text.split(" ");
+  return (
+    <span className={className} aria-label={text}>
+      {words.map((word, wi) => (
+        <span key={wi} className="inline-block overflow-hidden">
+          {word.split("").map((char, ci) => (
+            <span key={ci} className="char inline-block" aria-hidden="true">
+              {char}
+            </span>
+          ))}
+          {wi < words.length - 1 && (
+            <span className="inline-block" aria-hidden="true">
+              &nbsp;
+            </span>
+          )}
+        </span>
+      ))}
+    </span>
   );
 }
