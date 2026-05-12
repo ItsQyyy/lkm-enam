@@ -170,7 +170,7 @@ const Quotes = () => {
             ref={introLine3Ref}
             className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-gray-400 mt-4"
           >
-            {renderLetterSpans("— Kelompok 9, 2026", "l3")}
+            {renderLetterSpans("— Kelompok 6, lkm", "l3")}
           </div>
         </div>
 
