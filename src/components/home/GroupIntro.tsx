@@ -21,14 +21,13 @@ const groupImages = [
 const groupInfo = {
   number: "6",
   name: "Kelompok 6",
-  tagline: "Bersama Lebih Kuat",
+  tagline: "Engineering we trust!!",
   description:
     "Kami adalah Kelompok 6 dari rangkaian Latihan Kepemimpinan Mahasiswa (LKM) Jurusan Informatika. Terbentuk dari berbagai latar belakang dan karakter yang berbeda, kami percaya bahwa keberagaman adalah kekuatan.",
   details: [
     { label: "Angkatan", value: "2025" },
     { label: "Jurusan", value: "Informatika" },
     { label: "Jumlah Anggota", value: "9 Orang" },
-    { label: "Mentor", value: "Kak Budi" },
   ],
 };
 
@@ -119,7 +118,7 @@ export default function GroupIntro() {
   return (
     <div
       id="GroupSection"
-      className="relative"
+      className="relative bg-white"
     >
       <div className="px-6 md:px-16 lg:px-24 pt-16 md:pt-20">
         <TextHeading
@@ -140,11 +139,6 @@ export default function GroupIntro() {
         {/* Teks pengenalan kelompok */}
         <div ref={textRef} className="flex flex-col gap-6 max-w-md">
 
-          {/* Badge nomor kelompok */}
-          <span className="w-fit px-3 py-1 rounded-full bg-indigo-100 text-indigo-600 text-xs font-semibold tracking-widest uppercase">
-            Kelompok {groupInfo.number}
-          </span>
-
           {/* Nama & tagline */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -161,7 +155,7 @@ export default function GroupIntro() {
           </p>
 
           {/* Detail kelompok */}
-          <div className="grid grid-cols-2 gap-4 mt-2">
+          <div className="grid grid-cols-3 gap-4 mt-2">
             {groupInfo.details.map((item) => (
               <div key={item.label} className="flex flex-col gap-0.5">
                 <span className="text-xs text-gray-400 uppercase tracking-wider">
@@ -171,16 +165,6 @@ export default function GroupIntro() {
                   {item.value}
                 </span>
               </div>
-            ))}
-          </div>
-
-          {/* Dot indicator */}
-          <div className="flex gap-2 mt-2">
-            {groupImages.map((_, i) => (
-              <div
-                key={i}
-                className="h-1.5 w-1.5 rounded-full bg-indigo-300"
-              />
             ))}
           </div>
         </div>
