@@ -106,7 +106,7 @@ export default function Navbar() {
       ref={navRef}
       className={`
         fixed top-4 left-1/2 -translate-x-1/2 z-50
-        w-[92%] max-w-3xl
+        w-[92%] max-w-4xl
         flex items-center justify-between
         px-7 py-2.5
         bg-white/80 backdrop-blur-xl
@@ -120,7 +120,7 @@ export default function Navbar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-1">
-        <Image src="/logo.png" alt="Sigma Logo" width={20} height={20} unoptimized/>
+        {/* <Image src="/logo.png" alt="Sigma Logo" width={20} height={20} unoptimized/> */}
         <span
           className="text-xl font-black tracking-tight text-gray-900 select-none shrink-0"
           style={{ fontFamily: '"Georgia", serif', fontStyle: 'italic' }}

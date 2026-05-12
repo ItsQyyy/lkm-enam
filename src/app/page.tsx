@@ -3,9 +3,10 @@
 import Navbar from "@/components/ui/NavBar";
 import HeroSection from "@/components/home/HeroSection";
 import Quotes from "@/components/home/Quotes";
-import Group from "@/components/home/Group";
 import Team from "@/components/home/Team";
 import ScrollAnim from "@/components/common/ScrollAnim";
+import { Footer } from "@/components/ui/Footer";
+import GroupIntro from "@/components/home/GroupIntro";
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
         <Navbar />
         <HeroSection />
         <Quotes />
-        <Group />
+        <GroupIntro />
         <Team />
+        <Footer />
       </ScrollAnim>
-
     </main>
   )
 }

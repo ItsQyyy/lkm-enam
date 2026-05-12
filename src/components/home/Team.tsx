@@ -31,7 +31,7 @@ export const teamData: TeamMember[] = [
     // role: "Lead Developer",
     role: "",
     skills: ["Full Stack Developer", "UI/UX Designer"],
-    image: "https://7sqr8euvtsm1cutd.public.blob.vercel-storage.com/team/team-alif.mp4",
+    image: "https://7sqr8euvtsm1cutd.public.blob.vercel-storage.com/team/team-azka.mp4",
     },
     {
     id: 3,
@@ -40,7 +40,7 @@ export const teamData: TeamMember[] = [
     // role: "UI/UX Designer",
     role: "",
     skills: ["UI/UX Designer", "Frontend Developer"],
-    image: "https://7sqr8euvtsm1cutd.public.blob.vercel-storage.com/team/team-azka2.mp4",
+    image: "https://7sqr8euvtsm1cutd.public.blob.vercel-storage.com/team/team-azka.mp4",
     },
 ];
 
