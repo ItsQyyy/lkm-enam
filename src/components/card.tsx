@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 export interface CardProps {
+  id?: number | string;
   title: string;
   description: string;
   icon?: React.ReactNode;
@@ -13,7 +14,7 @@ export interface CardProps {
 }
 
 const levelColor: Record<string, string> = {
-  Pemula: "bg-emerald-100 text-emerald-700",
+  "LKM DAY 1" : "bg-emerald-100 text-emerald-700",
   Menengah: "bg-amber-100 text-amber-700",
   Lanjutan: "bg-rose-100 text-rose-700",
 };
@@ -32,9 +33,9 @@ export default function Card({
     <Link href={href} className="group block focus:outline-none">
       <div
         className="
-          items-center flex flex-col h-full
+          items-center flex flex-col h-[85vh]
           bg-white rounded-2xl
-          border w-3xl border-slate-100
+          border w-6xl border-slate-100
           shadow-sm hover:shadow-xl
           transition-all duration-300
           hover:-translate-y-1
@@ -61,7 +62,7 @@ export default function Card({
           <h3 className="text-lg font-bold text-slate-800 leading-snug group-hover:text-indigo-600 transition-colors duration-200">
             {title}
           </h3>
-          <p className="text-sm text-center text-slate-500 leading-relaxed line-clamp-3">
+          <p className="text-sm text-center w-5xl flex text-slate-500 leading-relaxed line-clamp-3">
             {description}
           </p>
 
@@ -84,7 +85,11 @@ export default function Card({
                     viewBox="0 0 24 24"
                   >
                     <circle cx="12" cy="12" r="10" strokeWidth="2" />
-                    <path strokeLinecap="round" strokeWidth="2" d="M12 6v6l4 2" />
+                    <path
+                      strokeLinecap="round"
+                      strokeWidth="2"
+                      d="M12 6v6l4 2"
+                    />
                   </svg>
                   {duration}
                 </span>
@@ -96,7 +101,7 @@ export default function Card({
           {typeof progress === "number" && (
             <div className="mt-3 w-full">
               <div className="flex justify-between text-xs text-slate-400 mb-1">
-                <span>Progress</span>
+                <span>Di Sukai Oleh</span>
                 <span>{progress}%</span>
               </div>
               <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
